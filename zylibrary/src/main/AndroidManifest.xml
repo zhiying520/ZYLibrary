@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.zhiying.zylibrary">
+
+    <application>
+        <activity android:name=".activity.ZYBaseAppCompatActivity">
+        </activity>
+        <activity android:name=".activity.ZYBaseActivity">
+        </activity>
+        <activity android:name=".viewutil.ZYCenterDialogActivity">
+        </activity>
+    </application>
+
+</manifest>

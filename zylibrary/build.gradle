@@ -1,0 +1,56 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 18
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //使用eventbus进行绑定数据发送
+    api 'de.greenrobot:eventbus:2.4.0'
+    //将Android视图和回调绑定到字段和方法
+    api 'com.jakewharton:butterknife:6.1.0'
+    //recyclerview列表
+    compileOnly 'com.android.support:recyclerview-v7:28.0.0'
+    //agentweb view 加载url使用
+    api 'com.just.agentweb:agentweb:4.0.2'
+    //okhttp 网络请求
+    api 'com.squareup.okhttp3:okhttp:3.2.0'
+	//阿里json解析库
+	compileOnly 'com.alibaba:fastjson:1.1.46.android'
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ZYBaseActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_zybasetop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/zy_dodgerblue"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_zybaseback"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:src="@drawable/zy_baseactivity_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_zybasesure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zy_base_sure"
+            android:textColor="@color/zy_white"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_zybasetitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="标题"
+            android:textColor="@color/zy_white"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_zybasesure"
+            app:layout_constraintStart_toEndOf="@+id/iv_zybaseback"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/iv_zybaseadd"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:src="@drawable/zy_baseactivity_add"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_zybasecontent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

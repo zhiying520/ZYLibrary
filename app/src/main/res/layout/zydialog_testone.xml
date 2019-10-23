@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="#ffffff"
+              android:orientation="vertical"
+              android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="每次看古装片听人说：愿闻其翔，都觉得怪怪的。。。"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="从前有只西瓜，他老是迷路，于是去买了个指南针。终于成功地找到路的时候，他变成了一只南瓜。。。"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/btn_another"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Another One?"
+        android:textAllCaps="false"
+        android:textStyle="normal"/>
+</LinearLayout>
