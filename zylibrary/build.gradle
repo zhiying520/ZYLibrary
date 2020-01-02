@@ -52,5 +52,6 @@ dependencies {
     //okhttp 网络请求
     api 'com.squareup.okhttp3:okhttp:3.2.0'
 	//阿里json解析库
-	compileOnly 'com.alibaba:fastjson:1.1.46.android'
+//	compileOnly 'com.alibaba:fastjson:1.1.46.android'
+    compile 'com.github.alibaba:fastjson:1.2.63'
 }
